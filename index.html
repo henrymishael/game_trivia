@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Start Screen -->
+      <div id="start-screen" class="screen active">
+        <h1>Game Trivia</h1>
+        <button id="start-btn" class="btn">Start Game</button>
+      </div>
+
+      <!-- Name Input Screen -->
+      <div id="name-screen" class="screen">
+        <h2>What's your name?</h2>
+        <input type="text" id="name-input" placeholder="Enter your name" />
+        <button id="name-submit" class="btn">Next</button>
+      </div>
+
+      <!-- Age Input Screen -->
+      <div id="age-screen" class="screen">
+        <h2>How old are you?</h2>
+        <input
+          type="number"
+          id="age-input"
+          placeholder="Enter your age"
+          min="1"
+          max="120"
+        />
+        <button id="age-submit" class="btn">Start Quiz</button>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quiz-screen" class="screen">
+        <div class="quiz-header">
+          <h2 id="question-text">Question text will appear here</h2>
+          <div id="score-display">Score: <span id="current-score">0</span></div>
+        </div>
+        <div id="options-container">
+          <!-- Options will be added dynamically -->
+        </div>
+        <button id="next-btn" class="btn hide">Next Question</button>
+      </div>
+
+      <!-- Results Screen -->
+      <div id="results-screen" class="screen">
+        <h2>Quiz Completed!</h2>
+        <p>Hello <span id="player-name">Player</span>!</p>
+        <p>Your score: <span id="final-score">0</span>/5</p>
+        <p id="result-message"></p>
+        <button id="play-again" class="btn">Play Again</button>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="theme-toggle" class="theme-toggle">
+        <svg
+          id="sun-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2"></path>
+          <path d="M12 20v2"></path>
+          <path d="m4.93 4.93 1.41 1.41"></path>
+          <path d="m17.66 17.66 1.41 1.41"></path>
+          <path d="M2 12h2"></path>
+          <path d="M20 12h2"></path>
+          <path d="m6.34 17.66-1.41 1.41"></path>
+          <path d="m19.07 4.93-1.41 1.41"></path>
+        </svg>
+        <svg
+          id="moon-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          style="display: none"
+        >
+          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+        </svg>
+      </button>
+      <button id="sound-toggle" class="control-btn">
+        <i class="fas fa-volume-up"></i>
+      </button>
+    </div>
+
+    <audio id="background-music" loop>
+      <source src="./assets/game.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="correct-sound">
+      <source src="./assets/correct.wav" type="audio/mp3" />
+    </audio>
+    <audio id="wrong-sound">
+      <source src="./assets/wrong.wav" type="audio/mp3" />
+    </audio>
+    <audio id="win-sound">
+      <source src="./assets/win.mp3" type="audio/mp3" />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
