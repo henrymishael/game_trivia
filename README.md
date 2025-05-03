@@ -1,4 +1,4 @@
-# QuizApp
+# GAME TRIVIA
 
 Game Trivia is a modern, interactive quiz application designed to test knowledge and provide an engaging user experience. This project is built with simplicity, scalability, and user-friendliness in mind.
 
