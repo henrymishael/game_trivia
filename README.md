@@ -20,7 +20,7 @@ Game Trivia is a modern, interactive quiz application designed to test knowledge
    ```
 2. Navigate to the project directory:
    ```bash
-   cd QuizApp
+   cd game_trivia
    ```
 
 ---
