@@ -6,6 +6,7 @@ Game Trivia is a modern, interactive quiz application designed to test knowledge
 
 - Create and manage quizzes with ease.
 - Interactive and responsive user interface.
+- Displays different sets of questions based on user's age (if user is above 18, displays slightly difficult questions and for users below 18, shows less difficult questions).
 - Real-time scoring and feedback.
 
 ## Technologies Used
