@@ -3,7 +3,7 @@ const adultQuestions = [
   {
     question: "Who is the father of Naruto?",
     options: ["Minato", "Sakura", "Killer bee", "Kakashi"],
-    correctAnswer: 1,
+    correctAnswer: 0,
   },
   {
     question: "What is the capital of Japan?",
@@ -18,7 +18,7 @@ const adultQuestions = [
       "Wole Soyinka",
       "Sefi Atang",
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
   },
   {
     question: "What is the chemical symbol for gold?",
