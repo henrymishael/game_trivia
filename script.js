@@ -1,8 +1,8 @@
 // Questions for different age groups
 const adultQuestions = [
   {
-    question: "Which planet is known as the Red Planet?",
-    options: ["Venus", "Mars", "Jupiter", "Saturn"],
+    question: "Who is the father of Naruto?",
+    options: ["Minato", "Sakura", "Killer bee", "Kakashi"],
     correctAnswer: 1,
   },
   {
@@ -11,12 +11,12 @@ const adultQuestions = [
     correctAnswer: 2,
   },
   {
-    question: "Who wrote 'Romeo and Juliet'?",
+    question: "Who wrote 'Purple Hibiscus?",
     options: [
-      "Charles Dickens",
-      "William Shakespeare",
-      "Jane Austen",
-      "Mark Twain",
+      "Chimamanda Ngozi Adichie",
+      "Chinua Achebe",
+      "Wole Soyinka",
+      "Sefi Atang",
     ],
     correctAnswer: 1,
   },
