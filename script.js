@@ -21,8 +21,9 @@ const adultQuestions = [
     correctAnswer: 0,
   },
   {
-    question: "What is the chemical symbol for gold?",
-    options: ["Go", "Gd", "Au", "Ag"],
+    question:
+      "What was the Nigeria Democracy celebrated before changing it to June 12?",
+    options: ["May 27", "October 1st", "May 29th", "June 12th"],
     correctAnswer: 2,
   },
   {
